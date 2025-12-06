@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A3 Poster – Social Media Wellness Analyzer</title>
+
+<style>
+
+/* ------------------------
+   A3 PAGE FIXED LAYOUT
+-------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #e9ecef;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* Exact A3 landscape proportion (scaled for screen) */
+.poster {
+    width: 1400px;
+    height: 990px;
+    background: white;
+    padding: 25px;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent scrollbars */
+    border: 2px solid #ccc;
+}
+
+/* ------------------------
+   HEADER
+-------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    height: 85px;
+}
+
+.title-block {
+    text-align: center;
+}
+
+.title-block h1 {
+    font-size: 30px;
+    margin: 5px 0;
+    color: #002b5c;
+}
+
+.title-block h2, .title-block h3 {
+    margin: 3px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+/* ------------------------
+   GRID LAYOUT
+-------------------------*/
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+/* Section Styling */
+.section {
+    background: #ffffff;
+    padding: 10px 13px;
+    border-radius: 10px;
+    border: 1.8px solid #cbd3e1;
+    height: auto;
+}
+
+.section h2 {
+    background: #002b5c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+/* Images */
+.arch-img {
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 8px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="poster">
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="jsslogo.png">
+        <div class="title-block">
+            <h2>JSS Mahavidyapeetha</h2>
+            <h3>JSS Academy of Technical Education, Bengaluru</h3>
+
+            <h1>Social Media Wellness Analyzer and<br>Recommendation System for Digital Well-being</h1>
+
+            <p class="subtitle">
+                Guide: <b>Dr. Rekha P M</b> |
+                Team: <b>Karthik A S, Anusha Karnam, Badri H S, Adarsh Naik</b>
+            </p>
+        </div>
+        <img src="v.jpg">
+    </div>
+
+    <!-- CONTENT GRID -->
+    <div class="grid-3">
+
+        <!-- LEFT COLUMN -->
+        <div>
+
+            <div class="section">
+                <h2>ABSTRACT</h2>
+                <p>
+                    This project introduces an AI-driven system that analyzes social media usage and predicts
+                    mental wellness levels using machine learning and NLP. It captures emotional sentiment,
+                    behavioral trends, usage patterns, and linguistic cues to estimate digital well-being.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>PROBLEM STATEMENT</h2>
+                <p>
+                    Excessive social media use increases stress, anxiety, sleep loss, and digital fatigue.
+                    Existing tools track only screen-time and fail to detect emotional or cognitive distress.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>KEY FEATURES</h2>
+                <ul style="margin-left:-10px;">
+                    <li>AI-based mental wellness prediction</li>
+                    <li>NLP sentiment analysis</li>
+                    <li>Behavioral pattern clustering</li>
+                    <li>Personalized recommendations</li>
+                    <li>Visual analytics dashboard</li>
+                    <li>Early distress detection</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- MIDDLE COLUMN -->
+        <div>
+
+            <div class="section">
+                <h2>SYSTEM ARCHITECTURE</h2>
+                <img src="sys.jpeg" class="arch-img">
+            </div>
+
+            <div class="section">
+                <h2>IMPLEMENTATION</h2>
+                <p><b>Languages:</b> Python, HTML, CSS, JS</p>
+                <p><b>Libraries:</b> Scikit-Learn, Pandas, NumPy</p>
+                <p><b>Visualization:</b> Matplotlib, Seaborn</p>
+                <p><b>Models:</b> Random Forest, Logistic Regression, SVM, K-Means</p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div>
+
+            <div class="section">
+                <h2>RESULTS</h2>
+                <p>
+                    • Accurate prediction of mental wellness scores  
+                    • Clustering reveals Low-Risk, Medium-Risk, High-Risk groups  
+                    • Sentiment scores strongly correlate with stress  
+                </p>
+                <p><b>Graphs to Insert:</b></p>
+                <ul>
+                    <li>Sentiment distribution</li>
+                    <li>Clustering results</li>
+                    <li>Usage frequency plot</li>
+                    <li>Prediction graph</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>CONCLUSION</h2>
+                <p>
+                    The system analyzes digital behavior, predicts early mental-health risks,
+                    and provides wellness recommendations. Future enhancements include real-time monitoring
+                    and multimodal emotion detection.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
